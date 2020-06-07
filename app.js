@@ -7,7 +7,3 @@ async function hent() {
 }
 
 hent();
-
-
-
-
