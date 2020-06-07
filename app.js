@@ -9,11 +9,15 @@ async function hent() {
     data.forEach(rocket => {
         console.log('rocket', rocket)
         let s = [rocket.rocket_name, rocket.height.meters, rocket.mass.kg]
-        grid.innerHTML += '<tr> 0 </tr>'
-/*         s.forEach(t => {
-            grid.innerHTML += '<td>' + t + '</td>'
-        }) */
-        //grid.innerHTML += '</tr>'
+
+        let h = '<tr>'
+         s.forEach(t => {
+            h += '<td>' + t + '</td>'
+        }) 
+
+        h += '</tr>'
+
+        grid.innerHTML += h
     })
 }
 
