@@ -11,6 +11,7 @@
             text-align: center;
             margin: auto;
         }
+
         table {
             border-collapse: collapse;
             visibility: hidden;
@@ -26,23 +27,43 @@
         tr:nth-child(even) {
             background-color: #dddddd;
         }
+
+        #container {
+            max-width: 720px;
+        }
+
+        #flex {
+            border: 1px solid gray;
+            display: flex;
+        }
     </style>
 </head>
 
 <body>
 
-    <h1>Rockets</h1>
-    <div id="loading">
-       loading... 
+    <div id="container">
+        <h1>SpaceX Rockets</h1>
+        <div id="loading">
+            loading...
+        </div>
+        <table id="table">
+            <tr>
+                <th>Name</th>
+                <th>Height</th>
+                <th>Mass</th>
+                <th>Wikipedia</th>
+            </tr>
+        </table>
+
+        <h1>Next Launch</h1>
+        <h2 id="missionName"></h2>
+        <h3 id="rocketName"></h3>
+        <div id="timer"></div>
+        <div id="flex">
+            <p id="details"></p>
+            <img id="image" width="150px" height="150px">
+        </div>
     </div>
-    <table id="table">
-        <tr>
-            <th>Name</th>
-            <th>Height</th>
-            <th>Mass</th>
-            <th>Wikipedia</th>
-        </tr>
-    </table>
 
 </body>
 
