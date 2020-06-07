@@ -6,11 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="app.js" defer></script>
     <title>SpaceX</title>
+    <style>
+        * {
+            text-align: center;
+            margin: auto;
+        }
+        table {
+            border-collapse: collapse;
+            visibility: hidden;
+        }
+
+        tr,
+        td,
+        th {
+            border: 1px solid gray;
+            padding: 5px 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
+    </style>
 </head>
 
 <body>
 
     <h1>Rockets</h1>
+    <div id="loading">
+       loading... 
+    </div>
     <table id="table">
         <tr>
             <th>Name</th>
